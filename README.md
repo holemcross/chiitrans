@@ -1,4 +1,22 @@
-﻿# Chiitrans Lite
+﻿# Chiitrans Lite Fork - Google Translate API Implementation
+This is a limited use fork of Chiitrans that allows the use of a valid Google Translate API. 
+
+# Directions
+
+1. Aquire a valid Google Cloud API key which can be found [here](https://cloud.google.com/).
+At the time of publishing, Google is offering $300 worth of free cloud services for new trials.
+
+2. Update the translators.js file by replacing the string 'REPLACE_ME_WITH_VALID_API_KEY' with your new API key.
+
+3. Re-launch Chiitrans Lite and go to Options -> Translation -> Additional translators. Slide Google API to the left.
+
+4. Run your favorite Japanese games and enjoy fast google translations like in the good old days.
+
+#Warnings
+
+Google cloud services is a paid for service, while trials are available, beware that you can incur costs very easily.
+
+# Chiitrans Lite
 Chiitrans Lite is an automatic translation tool for Japanese visual novels. It extracts, parses and translates text into English on the fly.
 
 Chiitrans Lite is the successor of the project [Chiitrans](http://code.google.com/p/chiitrans/).

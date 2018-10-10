@@ -76,6 +76,16 @@
         return ss.join(' ').replace(/\btsu\b/ig, '');
       });
     }),
+    "Google API": wrap(function(src, callback) {
+      var url;
+      src = encodeURIComponent(src);
+      let GOOGLE_API_KEY = 'REPLACE_ME_WITH_VALID_API_KEY';
+      url = 'https://translation.googleapis.com/language/translate/v2?source=ja&target=en&format=text&key=' + GOOGLE_API_KEY + '&q=' + src;
+      return get(url, callback, function(res) {
+        res = evalAsJson(res);
+        return res.data.translations[0].translatedText;
+      });
+    }),
     "Меховой пончик": wrap(function(src, callback) {
       var url;
       src = encodeURIComponent(src);
